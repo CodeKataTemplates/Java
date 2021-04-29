@@ -14,7 +14,7 @@ class CodeKataTest {
     IntSupplier mockRandomNumberSupplier = mock(IntSupplier.class);
     when(mockRandomNumberSupplier.getAsInt())
         .thenReturn(4);
-
+    System.out.println("ww");
     CodeKata kata = new CodeKata(mockRandomNumberSupplier);
     assertEquals(4, kata.generateRandomNumber());
   }
